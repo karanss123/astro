@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>log</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&family=Marcellus&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="loge">
+    <header>
+      <a href="#" class="logo">
+        <img src="#" alt="" />
+        Vastu <span>Astro</span>
+      </a>
+      <ul class="navbar">
+        <li><a href="index.html">home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      <div class="h-icons">
+        <a href="log.html">login</a>
+        <div class="bx bx-menu" id="menu-icons"></div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">sign up</h1>
+        <form>
+          <div class="input-group">
+            <div class="input-feild" id="namefeild">
+              <i class='bx bx-user'></i>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="input-feild">
+              <i class='bx bxs-envelope'></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-feild">
+              <i class='bx bxs-lock-alt'></i>
+              <input type="password" placeholder="password" />
+            </div>
+            <p></p>
+            <div class="btn-feild">
+              <button type="button" id="signupbtn">Sign Up</button>
+              <button type="button" id="signinbtn" class="disable">Sign In</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      let signupbtn = document.getElementById("signupbtn");
+      let signinbtn = document.getElementById("signinbtn");
+      let namefeild = document.getElementById("namefeild");
+      let title = document.getElementById("title");
+
+      signinbtn.onclick = function()
+       {
+        namefeild.style.maxHeight = "0";
+        title.innerHTML = "Sign In";
+        signupbtn.classList.add("disable");
+        signinbtn.classList.remove("disable");
+      }
+        signupbtn.onclick = function()
+         {
+        namefeild.style.maxHeight = "60px";
+        title.innerHTML = "Sign Up";
+        signupbtn.classList.remove("disable");
+        signinbtn.classList.add("disable");
+      };
+    </script>
+  </body>
+</html>

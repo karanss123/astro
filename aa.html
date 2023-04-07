@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12 Rashi's</title>
+  <style>
+    .container{
+margin: 0;
+padding: 0;
+
+
+    }
+
+    /* Style for each block */
+    .rashi {
+      /* position: relative; */
+      /* justify-content: center;
+      align-items: center;*/
+      text-align: center; 
+      display: inline-block;
+      width: 22%;
+      height: auto;
+      /* margin: 0 auto; */
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    /* Style for image inside each block */
+    .rashi img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    
+    /* Style for text overlay inside each block */
+    .rashi .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(249, 239, 239, 0.5);
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: height 0.3s ease;
+    }
+    
+    /* Style for text inside text overlay */
+    .rashi .overlay p {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px;
+      text-align: center;
+    }
+    
+    /* Hover effect on image */
+    .rashi:hover img {
+      transform: scale(1.1);
+    }
+    
+    /* Hover effect on text overlay */
+    .rashi:hover .overlay {
+      height: 100%;
+    }
+    
+    /* Responsive design */
+    @media only screen and (max-width: 768px) {
+      .rashi {
+        width: 45%;
+      }
+    }
+    
+    @media only screen and (max-width: 480px) {
+      .rashi {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="rashi">
+    <img src="assets/aries.png" alt="Aries">
+    <div class="overlay">
+      <p>Rashi Name</p>
+    </div>
+  </div>
+  <div class="rashi">
+    <img src="assets/taurus.png" alt="Rashi Image">
+    <div class="overlay">
+      <p>Rashi Name</p>
+    </div>
+  </div>
+  <div class="rashi">
+    <img src="assets/gemini.png" alt="Rashi Image">
+    <div class="overlay">
+      <p>Rashi Name</p>
+    </div>
+  </div>
+  <div class="rashi">
+    <img src="https://picsum.photos/id/237/300/200" alt="Rashi Image">
+    <div class="overlay">
+      <p>Rashi Name</p>
+    </div>
+  </div>
+
+  <div class="rashi">
+    <img src="https://picsum.photos/id/237/300/200" alt="Rashi Image">
+    <div class="overlay">
+      <p>Rashi Name</p>
+    </div>
+  </div>
+  <div class="rashi">
+    <img src="https://picsum.photos/id/237/300/200" alt="Rashi Image">
+    <div class="overlay">
+      <p>Rashi Name</p>
+    </div>
+  </div>
+  <div class="rashi">
+    <img src="https://picsum.photos/id/237/300/200" alt="Rashi Image">
+    <div class="overlay">
+      <p>Rashi Name</p>
+    </div>
+  </div>
+</div>
+  <!-- Repeat above block 11 more times with different images and text -->
+</body>
+</html>
